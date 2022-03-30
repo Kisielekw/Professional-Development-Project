@@ -54,6 +54,6 @@ public class Target : MonoBehaviour
 
     public override string ToString()
     {
-        return Name + ":\n" + Description;
+        return Name + "\n" + Description;
     }
 }
