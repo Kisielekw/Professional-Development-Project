@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public enum TargetType
 {
@@ -41,7 +42,12 @@ public class Target : MonoBehaviour
     {
         targetID = pID;
         type = pType;
-        string[] targetFile = File.ReadAllLines("Targets\\" + ID.ToString() + ".tag");
+        WWW www = new WWW(Application.streamingAssetsPath + "/Targets/" + ID.ToString() + ".tag");
+        while (!www.isDone)
+        {
+
+        }
+        string[] targetFile = www.text.Split('\n');
         targetName = targetFile[0];
         targetDiscription = targetFile[1];
     }
