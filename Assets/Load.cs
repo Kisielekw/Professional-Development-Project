@@ -26,7 +26,7 @@ public class Load : MonoBehaviour
         {
             GameObject newObject = Instantiate(thing, GetComponent<Transform>());
             newObject.name = t.Name;
-            newObject.GetComponent<RectTransform>().position = new Vector2(newObject.GetComponent<RectTransform>().position.x, newObject.GetComponent<RectTransform>().position.y - position);
+            newObject.GetComponent<RectTransform>().position = new Vector2(newObject.GetComponent<RectTransform>().position.x + position, newObject.GetComponent<RectTransform>().position.y);
             TextMeshProUGUI textMesh = newObject.GetComponentInChildren<TextMeshProUGUI>();
             textMesh.text = t.Name;
             RawImage image = newObject.GetComponentInChildren<RawImage>();
@@ -34,7 +34,7 @@ public class Load : MonoBehaviour
             while (!www.isDone) { }
             Texture2D picture = www.texture;
             image.texture = picture;
-            position += 1300;
+            position += 915;
         }
     }
 }
