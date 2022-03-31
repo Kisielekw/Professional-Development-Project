@@ -1,2 +1,0 @@
-Dawid
-Very Cool
