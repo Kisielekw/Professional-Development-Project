@@ -42,7 +42,7 @@ public class Target : MonoBehaviour
     {
         targetID = pID;
         type = pType;
-        WWW www = new WWW(Application.streamingAssetsPath + "/Targets/" + ID.ToString() + ".tag");
+        WWW www = new WWW(Application.streamingAssetsPath + "/Targets/" + ID.ToString() + "/ObjectiveInfo.tag");
         while (!www.isDone)
         {
 
