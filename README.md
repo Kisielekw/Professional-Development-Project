@@ -8,4 +8,4 @@ If you build the project please name the .apk file something over than test1.apk
 ## Downlad APK
 [Download](https://github.com/Kisielekw/Professional-Development-Project/raw/master/Builds/test1.apk)
 
-This downlad is off the main apk file. This file is only issued to download the prototype app onto your android device and can't be edited. To contribute to the project please refere to the [**Contributing to the Project**](README.md#contributing-to-the-project) section of the readme file.
+This downlad is off the main apk file. This file is only issued to download the prototype app onto your android device and can't be edited. To contribute to the project please refere to the [**Contributing to the Project**](#contributing-to-the-project) section of the readme file.
